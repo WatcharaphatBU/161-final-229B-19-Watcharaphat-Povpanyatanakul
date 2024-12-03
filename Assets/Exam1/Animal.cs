@@ -10,10 +10,10 @@ public abstract class Animal : MonoBehaviour
     {
         return;
     }
-    public abstract float Calculate();
+    public abstract float Calculate(float food);
     public virtual void MakeSound()
     {
-        Console.WriteLine("Animal Sound");
+        Debug.Log("Animal Sound");
     }
     public void DisPlayName()
     {

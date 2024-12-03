@@ -1,18 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewSpell : MonoBehaviour
+public class NewSpell : Spell
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        
+        Cast();
+        Cast("Dark Kight!");
+        Cast("Dark Kight!", 99);
     }
-
-    // Update is called once per frame
-    void Update()
+    public override void Cast()
     {
-        
+        Debug.Log("Casting a Summoning spell! Summon Mahoraka!");
     }
 }

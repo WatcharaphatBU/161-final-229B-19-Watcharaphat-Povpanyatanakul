@@ -7,14 +7,14 @@ public class Spell : MonoBehaviour
 {
     public virtual void Cast()
     {
-        Console.WriteLine("Spell-Casting Simulation Started!");
+        Debug.Log("Spell-Casting Simulation Started!");
     }
     public void Cast(string name)
     {
-        Console.WriteLine($"Casting a Spell on target {name}");
+        Debug.Log($"Casting a Spell on target: {name}");
     }
     public void Cast(string name,int level)
     {
-        Console.WriteLine($"{name}{level}");
+        Debug.Log($"Casting a Spell on {name} with level: {level}");
     }
 }

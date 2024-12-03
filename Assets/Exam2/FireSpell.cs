@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FireSpell : Spell
 {
-    void Start()
+    public void Start()
     {
         Cast();
         Cast("Slime!");
@@ -13,6 +13,6 @@ public class FireSpell : Spell
     }
     public override void Cast()
     {
-        Console.WriteLine("Casting a FireSpell!");
+        Debug.Log("Casting a Fire ball spell! Burn them all!");
     }
 }

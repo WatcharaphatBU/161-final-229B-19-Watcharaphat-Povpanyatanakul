@@ -9,12 +9,13 @@ public class Dog : Animal
     {
         Init("");
     }
-    public override float Calculate()
+    public override float Calculate(float food)
     {
-
+        Debug.Log("");
+        return food;
     }
     public override void MakeSound()
     {
-
+        Debug.Log("");
     }
 }
